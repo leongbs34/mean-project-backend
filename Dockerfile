@@ -27,7 +27,7 @@ RUN npm install
 # Copy application code
 COPY --link . .
 
-RUN mkdir images
+RUN mkdir -p images
 
 # Final stage for app image
 FROM base
